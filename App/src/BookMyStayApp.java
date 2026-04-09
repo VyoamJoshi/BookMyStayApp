@@ -1,18 +1,17 @@
-import java.util.*;
-
-class Booking {
+class Room {
     int id;
+    boolean available = false;
 
-    Booking(int id) {
+    Room(int id) {
         this.id = id;
     }
 }
 
 public class BookMyStayApp {
     public static void main(String[] args) {
-        List<Booking> history = new ArrayList<>();
-        history.add(new Booking(1));
+        Room r = new Room(101);
+        r.available = true;
 
-        System.out.println("History size: " + history.size());
+        System.out.println("Booking Cancelled");
     }
 }
